@@ -1,0 +1,5 @@
+#!/bin/bash -eu
+cd "$(dirname "$0")"
+
+# TODO remove cache?
+docker build -t karlicoss/cloudmacs . "$@"

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-07-27 Thu 03:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>hello pancho</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content">
+<h1 class="title">hello pancho</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org459aeb2">Example Fake Table</a></li>
+</ul>
+</div>
+</div>
+<p>
+I think this place will have a lot of fun things.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash" id="org772fd04">date
+echo "hola"
+</pre>
+</div>
+
+<pre class="example">
+Thu Jun 29 08:07:32 UTC 2023
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-bash">free -m
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">total</td>
+<td class="org-right">used</td>
+<td class="org-right">free</td>
+<td class="org-right">shared</td>
+<td class="org-right">buff/cache</td>
+<td class="org-right">available</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Mem:</td>
+<td class="org-right">976</td>
+<td class="org-right">380</td>
+<td class="org-right">183</td>
+<td class="org-right">0</td>
+<td class="org-right">413</td>
+<td class="org-right">421</td>
+</tr>
+
+<tr>
+<td class="org-left">Swap:</td>
+<td class="org-right">511</td>
+<td class="org-right">169</td>
+<td class="org-right">342</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-bash">curl 'wttr.in/Amsterdam?m2&amp;lang=nl' | grep km/h
+</pre>
+</div>
+
+
+
+<button onclick="myFunction()">Click me</button>
+
+<script>
+function myFunction() {
+  alert("woooow!");
+}
+</script>
+
+<div class="org-src-container">
+<pre class="src src-shell">touch other.html
+
+</pre>
+</div>
+
+<p>
+lets go to <a href="pancho_site.html">click here to go to page</a>
+</p>
+
+<div id="outline-container-org459aeb2" class="outline-2">
+<h2 id="org459aeb2">Example Fake Table</h2>
+<div class="outline-text-2" id="text-org459aeb2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Header-1</th>
+<th scope="col" class="org-left">Header-2</th>
+<th scope="col" class="org-left">Header-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Value 1</td>
+<td class="org-left">Value 2</td>
+<td class="org-left">Value 3</td>
+</tr>
+
+<tr>
+<td class="org-left">Another val</td>
+<td class="org-left">Yet another va</td>
+<td class="org-left">A third</td>
+</tr>
+
+<tr>
+<td class="org-left">ue</td>
+<td class="org-left">lue</td>
+<td class="org-left">value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2023-07-27 Thu 03:57</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+</div>
+</body>
+</html>

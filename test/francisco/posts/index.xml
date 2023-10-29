@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Francisco Sanudo</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Francisco Sanudo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs: Why I&#39;m using Emacs as my text editor 📓</title>
+      <link>/posts/emacs_00/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/emacs_00/</guid>
+      <description>It feels so great writing for long hours in emacs with a nice keyboard (in my case a ThinkPad keyboard), no matter what computer I&amp;rsquo;m using, as long as I have a terminal and decent resources for my tasks that will be fine for me. This is one of the discoveries in my journey that very well paid back the resources I spent to learn. Its old, robust but at the same time is highly flexible, with many features and packages that will give you an experience that will boost your productivity to the next level.</description>
+      <content>&lt;p&gt;It feels so great writing for long hours in emacs with a nice keyboard (in my case a ThinkPad keyboard), no matter what computer I&amp;rsquo;m using, as long as I have a terminal and decent resources for my tasks that will be fine for me. This is one of the discoveries in my journey that very well paid back the resources I spent to learn. Its old, robust but at the same time is highly flexible, with many features and packages that will give you an experience that will boost your productivity to the next level. It&amp;rsquo;s not a secret that learning curve is challenging and after you get started you are going to realize that there is a rabbit hole full of features, packages, modes, lisp and others.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not saying that you cannot use same experience from any other IDE or text editor, nor you&amp;rsquo;re not going to feel that improvement specially at the beginning, things are going to get sharper after you engage in a workflow that uses emacs for building code and notes. I think emacs gives you that, a new mindset, that&amp;rsquo;s it you know at this point you can do the same with other tools. For example for org-mode there are modern popular contenders such as notion, evernote and logseq. I tried them all, and all would say they&amp;rsquo;re popular because they&amp;rsquo;re excellent for what they do, but I still think emacs is special, and that is because is that is highly extensible, you can do from simple note taking to write code and even running code/macros from an instance that runs inside of many buffers which happens to be highly accessible to you, that is what makes emacs different from any other text editors.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;/img/emacs_00_workflow.png&#34;  alt=&#34;Just a normal workflow inside of Emacs&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;right&#34;  style=&#34;color: black;&#34; &gt;A workflow example in Emacs!&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;This text editor can boost other parts that work in a less common area of productiveness, this is all about flexibility to the point that you can create your own workflow here, as a result there are many packages and tools that you can create which makes your workflow experience more pleasant and productive, that is what in reality is emacs. I was reading recently about macros, I remembered them from the school specially when using excel, they are powerful right? guess what&amp;hellip; I read about them in Wikipedia, I cannot believe that this text editor was part of early macros, and its name was a piece of the next text &amp;lsquo;Editor MACroS&amp;rsquo;. Anyways, it&amp;rsquo;s good to be using an old piece of historic software that was influenced by UNIX and kept alive by the open source community.&lt;/p&gt;
+&lt;p&gt;When I started using Linux terminals more often, that was a fun part of my life highly driven just for fun, I did not use it in school or work but still use Linux. I&amp;rsquo;ve spent time trying first using open source software and that led me to code a bit in bash and eventually triggered my desire to learn Python, I knew that I needed to go and search the best new exciting software for text editing, so I&amp;rsquo;ve checked constantly what were those text editors with rich features that were good enough to test, that led me to emacs. First real exposure to emacs occurred because of forums and memes, inside of such forums some people posted interesting text editors and few sites were they compared emacs with other text editors such as VIM, Kate, Geany or Atom, then my curiosity influenced me to check among them and see which one will suit my needs. I&amp;rsquo;ve tried emacs and did notice that a high amount of resources should be spent upfront, that was discouraging simply I simply decided to move on and learn more about Data Science stuff. Back then around 2018, there was a decent list of popular IDE&amp;rsquo;s that could get job done I was using Kate and Jupyter Notebooks, but I was still looking for that thing that could get the job done faster, that&amp;rsquo;s when I&amp;rsquo;ve decided to give a try to the other &amp;lsquo;bad ass text editor&amp;rsquo; and that was VIM. My first thought after questioning: Should I try VIM? well guess what!, I was a touchtyper back, not the fastest (avg 80 wpm by the time), so I immediately started to be using VIM.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll just said that VIM is cool, after few years using VIM, it is hard to adapt me back again to use text file or a terminal without it, in terms of productivity, good results started softly but later after a year my writing speed increased substantially and not to mention that creativity was another part that was hit by this tool because it reduces the friction of putting your thoughts in text ASAP. In simple terms, VIM provides a very exquisite user experience, it lets you optimize your workflow by customizing your text editor in very nice ways, I still use VIM and its variants including VIM keybindings everywhere, I&amp;rsquo;ll talk more about this in another post, since VIM is a text editor I frequently use.&lt;/p&gt;
+&lt;p&gt;After learning the basics and adapting my muscle memory for VIM I was good to learn the next thing, then I&amp;rsquo;ve found that emacs has a mode that lets you use VIM keybindings inside of it, next thing it was to pick an updated version of it and then I&amp;rsquo;ve found the different of flavors of emacs, I&amp;rsquo;ve decided to try them. First I&amp;rsquo;ve found &amp;lsquo;Spacemacs&amp;rsquo;, it was kind of difficult at the beginning and then I&amp;rsquo;ve found &amp;lsquo;Doom Emacs&amp;rsquo; which happens to have &amp;rsquo;evil-mode&amp;rsquo; activated by default and has an active community. &amp;rsquo;evil-mode&amp;rsquo; can be activated in order to give you the same VIM feel like experience, that was actually very nice and a deal breaker for me, you could get the exquisite flavor of VIM inside of emacs, at the end of the day that was my main motivator that convinced me to make to the switch.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not going to give you a full review of experiences with other modes, this distribution of Emacs lets you start really quick by just uncommenting the next file &lt;code&gt;./doom.d/init.el&lt;/code&gt;, but here I want to give a high level view of the packages that I normally use on a daily basis to get more things done, my current setup includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a left pane with neotree and projects subdirectories listed there with current things you&amp;rsquo;re trying to solve&lt;/li&gt;
+&lt;li&gt;a 3 pane window arrangement like 1 vertical and 2 others or more stacked vertically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is my general view setup, I frequently toggle the left pane by using &lt;code&gt;SPC o p&lt;/code&gt; that show and hide the left pane where neotree is located which was useful to maximize area.&lt;/p&gt;
+&lt;p&gt;Most of my time in Emacs is spent writing my notes, that includes code, project documentation and other general topics. Since there are many things running Emacs lets me choose different kind of workspaces by just executing the next keyboard combination &lt;code&gt;SPC TAB n&lt;/code&gt; I am able to create a new workspace and not to mix them all, and be able to switch between them, I mean for me this is cool and the best part of it is that everything is free to customize, user has access to this and is able to change its behaviour as he/she wants.&lt;/p&gt;
+&lt;p&gt;-
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;/img/emacs_00_block.png&#34;  alt=&#34;Code blocks are great inside of Emacs, you should try them&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;right&#34;  style=&#34;color: black;&#34; &gt;Code blocks written and executed inside of org!&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+&lt;/p&gt;
+&lt;p&gt;For coding, I generally use same pane configuration with an &amp;rsquo;eshell&amp;rsquo; terminal which works out of the box, I like how good the keybindings are very well integrated with &amp;rsquo;eshell&amp;rsquo;, of course Emacs offers many variants, I&amp;rsquo;ve heard good things about &amp;lsquo;vterm&amp;rsquo; which I&amp;rsquo;ll give it a try in the future, the overall experience for coding is fantastic and simple, you just need to uncomment your preferred language in the &lt;code&gt;init.el&lt;/code&gt; file mentioned before, refresh your Emacs by doing a &lt;code&gt;SPC H r r&lt;/code&gt; and you are all set.&lt;/p&gt;
+&lt;p&gt;In respect of documentation everything goes to org-mode which is incredibly powerful, this is absolutely one of the best packages I ever used, you can pretty much do anything from here, from taking simple notes to create code blocks and run them from here like Jupyter notebooks, it is incredible amazing how this thing works with many languages. In my opinion org deserves an exclusive description because it is so extense, I&amp;rsquo;ll probably talk more about this in the future, but for now I&amp;rsquo;ll say that most of my time is being spent in org files building my notes for everything and also my task management by doing org-agenda.&lt;/p&gt;
+&lt;p&gt;In conclusion, Emacs is an incredibly flexible text editor that gives you full control over its extendible properties, if you know the tool, you can be highly productive here without exiting Emacs, that means focus. For me, being in one pace that can do most of workflow for creation giving me the possibility to keep getting things better, it has made the magic, giving me a superior experience and enough motificaiton to keep learning and play with it every single day.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Go: Reading json files 👀</title>
+      <link>/posts/golang/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/golang/</guid>
+      <description>Let&amp;rsquo;s do something basic, something simple like reading a json file, in this case we&amp;rsquo;re going to use &amp;lsquo;ioutils&amp;rsquo; with &amp;rsquo;encoding&amp;rsquo; in json, everything is included in the standard library so no worries about installing third party libraries.
+Unfortunately if we want to print like we usually do on python, it is not going to be possible, Go demands the user to decode the json file into a data structure that go understands.</description>
+      <content>&lt;p&gt;Let&amp;rsquo;s do something basic, something simple like reading a json file, in this case we&amp;rsquo;re going to use &amp;lsquo;ioutils&amp;rsquo; with &amp;rsquo;encoding&amp;rsquo; in json, everything is included in the standard library so no worries about installing third party libraries.&lt;/p&gt;
+&lt;!-- ``` go --&gt;
+&lt;!-- package main --&gt;
+&lt;!-- import ( --&gt;
+&lt;!-- 	&#34;fmt&#34; --r
+&lt;!-- 	&#34;os&#34; --&gt;
+&lt;!-- ) --&gt;
+&lt;!-- func main() { --&gt;
+&lt;!-- 	jsonReader() --&gt;
+&lt;!-- } --&gt;
+&lt;!-- // This opens a json file --&gt;
+&lt;!-- func jsonReader() { --&gt;
+&lt;!-- 	jsonData, err := os.Open(&#34;fileExample.json&#34;) --&gt;
+&lt;!-- 	if err != nil { --&gt;
+&lt;!-- 		fmt.Println(err) --&gt;
+&lt;!-- 	} --&gt;
+&lt;!-- 	fmt.Println(&#34;success opening json file, hell yeah&#34;) --&gt;
+&lt;!-- 	defer jsonData.Close() --&gt;
+&lt;!-- } --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- After running we&#39;re going to have the next result: --&gt;
+&lt;!-- ```  --&gt;
+&lt;!-- #+RESULTS: --&gt;
+&lt;!-- success opening json file, hell yeah --&gt;
+&lt;!-- ``` --&gt;
+&lt;p&gt;Unfortunately if we want to print like we usually do on python, it is not going to be possible, Go demands the user to decode the json file into a data structure that go understands.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;io/ioutil&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;encoding/json&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Customer&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;Firstname&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;Lastname&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;Country&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;jsonReader&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jsonReader&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;jsonData&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ioutil&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ReadFile&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fileExample.json&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;success opening json file, hell yeah&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dataCust&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Customer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Unmarshal&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;jsonData&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dataCust&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Error during Unmarshal(): &amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name: &amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;dataCust&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Lastname&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Notice that this time we specified in advance the structure type that is expected while reading the file, the results as shown below.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#+RESULTS:
+success opening json file, hell yeah
+name:  Sperling
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see there is a lot going on there, if you come form python, you have noticed already that script takes longer to be built, that in part is because Go needs to have a better definition of what to expect.&lt;/p&gt;
+&lt;!-- # How go compares to others, what are the advantages? --&gt;
+&lt;!-- # --&gt; What plans do I have for using go in the future?
+</content>
+    </item>
+    
+    <item>
+      <title>Postgres: the basics, a beginner approach 🐘</title>
+      <link>/posts/postgres_basic/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/postgres_basic/</guid>
+      <description>Hello everybody, I&amp;rsquo;m glad to announce that this is my first post and video that I do. This is a simple introduction to PostgreSQL, also known as postgres, that will show you how to create a SQL database and a table
+Postgres is a very popular relational database, it is open source and it is easy to get started with it.
+This is intended to the anyone that is learning about general programming, who knows may be data science, business analysis, like I said this is a hands-on video that will show you how easy is to create a database and a table using prostgres.</description>
+      <content>&lt;p&gt;Hello everybody, I&amp;rsquo;m glad to announce that this is my first post and video that I do.
+This is a simple introduction to PostgreSQL, also known as postgres, that will show you how to create a SQL database and a table&lt;/p&gt;
+&lt;p&gt;Postgres is a very popular relational database, it is open source and it is easy to get started with it.&lt;/p&gt;
+&lt;!-- &lt;iframe width=&#34;100%&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/f_GC0d38jl4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/f_GC0d38jl4&#34;
+          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34;
+          allowfullscreen=&#34;&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;This is intended to the anyone that is learning about general programming, who knows may be data science, business analysis, like I said this is a hands-on video that will show you how easy is to create a database and a table using prostgres.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-install-postgres&#34;&gt;How to install postgres&lt;/h2&gt;
+&lt;p&gt;My recommendation is to start with postgres, this relational database management system and the best thing on this is &amp;rsquo;this is an opensource solution&amp;rsquo;, so this is free/libre so very important to have in mind. Installation it&amp;rsquo;s simple, just go the postgres official website and the instructions are actually there, very clear.&lt;/p&gt;
+&lt;p&gt;In case you&amp;rsquo;re using a macbook computer, you have two easy options to install:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install postgressapp&lt;/li&gt;
+&lt;li&gt;Install posgres using docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this case, I will use option 1, since its the most simple to start, I will cover how to work with docker and postgres in another post.
+A terminal will be used as well.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-new-database&#34;&gt;Create a new database&lt;/h2&gt;
+&lt;p&gt;Great, now we&amp;rsquo;re going to do real work, let&amp;rsquo;s open up a terminal. It is very important to notice that postgres is called &amp;lsquo;psql&amp;rsquo; from the terminal, you can check your postgres version doing this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;psql --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That is important to know, because in the future you might want to know what version you&amp;rsquo;re using.&lt;/p&gt;
+&lt;p&gt;Let suppose we are creating a new database, so let&amp;rsquo;s create a database called example_db&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DATABASE&lt;/span&gt; example_db &lt;span style=&#34;color:#66d9ef&#34;&gt;OWNER&lt;/span&gt; my_name;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Normally the scripts intended for SQL are going to be called.&lt;/p&gt;
+&lt;p&gt;For removing/erasing databases there is the command DROP, which I would recommend to do a double check before proceeding, let&amp;rsquo;s do an example of dropping the example_db.&lt;/p&gt;
+&lt;p&gt;In order to clear your screen you can do this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt; clear
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;create-a-new-table&#34;&gt;Create a new table&lt;/h2&gt;
+&lt;p&gt;Well, now that you have created the database, at this point we should be knowing in advance the datatype of the information that we&amp;rsquo;re going to be using, for purposes of this video we&amp;rsquo;re going to use a csv generated with random information from [[https://extendsclass.com/csv-generator.html][Online CSV generator - Generate random SQL data]], you can pick you&amp;rsquo;re csv here or in any other place in the internet.&lt;/p&gt;
+&lt;p&gt;So, you can see there are 5 columns in our csv files.&lt;/p&gt;
+&lt;p&gt;We have downloaded the document and moved it into a different directory.&lt;/p&gt;
+&lt;p&gt;In order to create the table in postgres, let&amp;rsquo;s put the next on the terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; example_table(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id INTEGER,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;firstname VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lastname VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;email1 VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;email2 VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;profession VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;load-a-csv&#34;&gt;Load a csv&lt;/h2&gt;
+&lt;p&gt;Now is the time to load the information that is stored in the CSV file, to do this we have to know the path to csv file, we&amp;rsquo;re going to use the next command of copy&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;COPY&lt;/span&gt; example_table(id, firstname, lastname, email1, email2, profession)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/Users/franciscosanudo/psql_example/myFile0.csv&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELIMITER&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CSV HEADER;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Take a look to the data you have loaded&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; example_table;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Well now we have created our database and table in postgres, there are a lot to know about this for example it would be cool to use postgres in a docker container, but for now we would leave it here.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
