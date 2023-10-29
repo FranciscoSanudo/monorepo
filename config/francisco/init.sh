@@ -7,10 +7,10 @@ echo "conf succesfully loaded"
 
 #install apache2-tools
 apt update
-apt install -y apache2-tools
+apt install -y apache2-utils
 
 #setup pwd
 htpasswd -c /etc/nginx/.htpasswd solovino
 
 #restart nginx
-service restart nginx
+service nginx restart
