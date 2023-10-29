@@ -35,6 +35,7 @@ services:
       - "80"
     volumes:
       - ./francisco:/usr/share/nginx/html:ro
+      - ./config/francisco:/francisco
       - ./news:/home
     environment:
       - VIRTUAL_HOST=franciscosanudo.com,www.franciscosanudo.com
@@ -78,8 +79,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    expose:
+      - "65000"
     volumes:
       - ./emacs:/app
+      - ./config/emacs:/emacs
     tty: true
     stdin_open: true
     container_name: emacs
