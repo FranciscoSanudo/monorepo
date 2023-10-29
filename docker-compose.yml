@@ -1,77 +1,92 @@
 version: '3'
 
 services:
-  nginx-proxy:
-    image: jwilder/nginx-proxy
-    restart: always
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-      - certs:/etc/nginx/certs:ro
-      - vhostd:/etc/nginx/vhost.d
-      - html:/usr/share/nginx/html
-    labels:
-      - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
+  # nginx-proxy:
+  #   image: jwilder/nginx-proxy
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - /var/run/docker.sock:/tmp/docker.sock:ro
+  #     - certs:/etc/nginx/certs:ro
+  #     - vhostd:/etc/nginx/vhost.d
+  #     - html:/usr/share/nginx/html
+  #   labels:
+  #     - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
 
-  letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion
-    restart: always
-    environment:
-      - NGINX_PROXY_CONTAINER=nginx-proxy
-    volumes:
-      - certs:/etc/nginx/certs:rw
-      - vhostd:/etc/nginx/vhost.d
-      - html:/usr/share/nginx/html
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+  # letsencrypt:
+  #   image: jrcs/letsencrypt-nginx-proxy-companion
+  #   restart: always
+  #   environment:
+  #     - NGINX_PROXY_CONTAINER=nginx-proxy
+  #   volumes:
+  #     - certs:/etc/nginx/certs:rw
+  #     - vhostd:/etc/nginx/vhost.d
+  #     - html:/usr/share/nginx/html
+  #     - /var/run/docker.sock:/var/run/docker.sock:ro
 
   www_francisco:
     image: nginx
     restart: always
+    ports:
+      - 80:80
     expose:
       - "80"
     volumes:
-      - /home/pancho/websites/francisco:/usr/share/nginx/html:ro
-      - /home/pancho/websites/news:/home
+      - ./francisco:/usr/share/nginx/html:ro
+      - ./news:/home
     environment:
       - VIRTUAL_HOST=franciscosanudo.com,www.franciscosanudo.com
       - LETSENCRYPT_HOST=franciscosanudo.com,www.franciscosanudo.com
       - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
-    depends_on:
-      - nginx-proxy
-      - letsencrypt
+    # depends_on:
+    #   - nginx-proxy
+    #   - letsencrypt
 
-  www_david:
-    image: nginx
-    restart: always
-    expose:
-      - "80"
+  # www_david:
+  #   image: nginx
+  #   restart: always
+  #   expose:
+  #     - "80"
+  #   volumes:
+  #     - ./david:/usr/share/nginx/html:ro
+  #   environment:
+  #     - VIRTUAL_HOST=davidbriseno.com,www.davidbriseno.com
+  #     - LETSENCRYPT_HOST=davidbriseno.com,www.davidbriseno.com
+  #     - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
+    # depends_on:
+    #   - nginx-proxy
+    #   - letsencrypt
+
+  # www_mrpancho:
+  #   image: nginx
+  #   restart: always
+  #   expose:
+  #     - "80"
+  #   volumes:
+  #     - ./mrpancho:/usr/share/nginx/html:ro
+  #   environment:
+  #     - VIRTUAL_HOST=mrpancho.xyz,www.mrpancho.xyz
+  #     - LETSENCRYPT_HOST=mrpancho.xyz,www.mrpancho.xyz
+  #     - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
+    # depends_on:
+    #   - nginx-proxy
+    #   - letsencrypt
+
+  emacs:
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - /home/pancho/websites/david:/usr/share/nginx/html:ro
-    environment:
-      - VIRTUAL_HOST=davidbriseno.com,www.davidbriseno.com
-      - LETSENCRYPT_HOST=davidbriseno.com,www.davidbriseno.com
-      - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
-    depends_on:
-      - nginx-proxy
-      - letsencrypt
-
-  www_mrpancho:
-    image: nginx
+      - ./emacs:/app
+    tty: true
+    stdin_open: true
+    container_name: emacs
     restart: always
-    expose:
-      - "80"
-    volumes:
-      - /home/pancho/websites/mrpancho:/usr/share/nginx/html:ro
-    environment:
-      - VIRTUAL_HOST=mrpancho.xyz,www.mrpancho.xyz
-      - LETSENCRYPT_HOST=mrpancho.xyz,www.mrpancho.xyz
-      - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
+    command: tail -f /dev/null
     depends_on:
-      - nginx-proxy
-      - letsencrypt
-
+      - www_francisco
 
 volumes: 
   certs:
