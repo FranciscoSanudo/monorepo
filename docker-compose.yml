@@ -32,8 +32,9 @@ services:
     expose:
       - "80"
     volumes:
-      - /home/pancho/websites/francisco:/usr/share/nginx/html:ro
-      - /home/pancho/websites/news:/home
+      - ./francisco:/usr/share/nginx/html:ro
+      - ./config/francisco:/francisco
+      - ./news:/home
     environment:
       - VIRTUAL_HOST=franciscosanudo.com,www.franciscosanudo.com
       - LETSENCRYPT_HOST=franciscosanudo.com,www.franciscosanudo.com
@@ -48,7 +49,7 @@ services:
     expose:
       - "80"
     volumes:
-      - /home/pancho/websites/david:/usr/share/nginx/html:ro
+      - ./david:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=davidbriseno.com,www.davidbriseno.com
       - LETSENCRYPT_HOST=davidbriseno.com,www.davidbriseno.com
@@ -63,7 +64,7 @@ services:
     expose:
       - "80"
     volumes:
-      - /home/pancho/websites/mrpancho:/usr/share/nginx/html:ro
+      - ./mrpancho:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=mrpancho.xyz,www.mrpancho.xyz
       - LETSENCRYPT_HOST=mrpancho.xyz,www.mrpancho.xyz
@@ -72,6 +73,20 @@ services:
       - nginx-proxy
       - letsencrypt
 
+  emacs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "65000"
+    volumes:
+      - ./emacs:/app
+      - ./config/emacs:/emacs
+    tty: true
+    stdin_open: true
+    container_name: emacs
+    restart: always
+    command: tail -f /dev/null
 
 volumes: 
   certs:
