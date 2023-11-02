@@ -6,49 +6,61 @@
     <description>Recent content in Welcome to Francisco&#39;s website on Francisco Sanudo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Francisco Sanudo</copyright>
     <lastBuildDate>Sat, 19 Nov 2022 01:54:12 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lisp: From emacs to functional programming, a new exciting world</title>
+      <title>Lisp: From emacs to functional programming, a new exciting world ☯️</title>
       <link>/posts/emacs_to_functional/</link>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>/posts/emacs_to_functional/</guid>
-      <description>Hey, coding enthusiasts and tech explorers! Get ready to supercharge your programming journey with a twist that&amp;rsquo;ll leave you itching to dive into the world of functional programming. Join me as I spill the beans on how my switch from Vim to Emacs ignited a chain reaction, propelling me into the captivating universe of functional programming. No pocket protectors needed – just an appetite for knowledge and a hint of curiosity!</description>
-      <content>&lt;p&gt;Hey, coding enthusiasts and tech explorers! Get ready to supercharge your programming journey with a twist that&amp;rsquo;ll leave you itching to dive into the world of functional programming. Join me as I spill the beans on how my switch from Vim to Emacs ignited a chain reaction, propelling me into the captivating universe of functional programming. No pocket protectors needed – just an appetite for knowledge and a hint of curiosity!&lt;/p&gt;
-&lt;h3 id=&#34;mastering-emacs-where-text-meets-power&#34;&gt;&lt;strong&gt;Mastering Emacs: Where Text Meets Power&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Hey there, fellow coding champions! Imagine a text editor that&amp;rsquo;s more than meets the eye – that&amp;rsquo;s Emacs. It&amp;rsquo;s like a code playground on steroids, armed with a secret weapon called org-mode that&amp;rsquo;s as addictive as it is efficient. But hold up, because that&amp;rsquo;s just the tip of the iceberg.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Emacs Lisp magic&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun greet (name)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hey there, %s! Ready to code?&amp;#34;&lt;/span&gt; name))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(greet &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Coder&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;the-epic-crossover-emacs-and-functional-programming&#34;&gt;&lt;strong&gt;The Epic Crossover: Emacs and Functional Programming&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Fasten your seatbelts, because here&amp;rsquo;s where things get juicy. While I was busy conquering Emacs&amp;rsquo;s feats, I stumbled upon an uncharted gateway to the fascinating world of functional programming languages. Yep, you heard me – the very tools I used for text editing laid the groundwork for a brand new coding escapade.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1. The Allure of Emacs Lisp:&lt;/strong&gt;
-Hold onto your keyboards, folks! Emacs Lisp, hidden within Emacs&amp;rsquo;s heart, is more than just syntax. It&amp;rsquo;s a portal to programming mastery. With functions at its core, it&amp;rsquo;s all about crafting elegant code. And guess what? It&amp;rsquo;s your backstage pass to the functional programming arena!&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; A taste of Emacs Lisp power&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun double (x)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;*&lt;/span&gt; x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(double &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;; Returns 14&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;2. Embracing Scheme: The Poetry of Code:&lt;/strong&gt;
-Now, prepare to be dazzled. Say hello to Scheme, a programming language that&amp;rsquo;s like a rhythmic dance of elegance. This is where the essence of functional programming truly comes alive – concise, expressive, and oh-so-smooth.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Scheme simplicity&lt;/span&gt;
+      <description>Discovering Functional Programming Through Emacs Hello there, fellow coding enthusiasts! I&amp;rsquo;m thrilled to share my journey into the world of programming, a journey that all began with the discovery of Emacs. Let&amp;rsquo;s delve into how Emacs introduced me to the realm of functional programming, starting with Elisp and expanding into Common Lisp, Scheme, and my current fascination with Clojure.
+Part 1: Elisp - The Gateway to Functional Programming My journey started when I stumbled upon Elisp, the Emacs Lisp.</description>
+      <content>&lt;h1 id=&#34;discovering-functional-programming-through-emacs&#34;&gt;Discovering Functional Programming Through Emacs&lt;/h1&gt;
+&lt;p&gt;Hello there, fellow coding enthusiasts! I&amp;rsquo;m thrilled to share my journey into the world of programming, a journey that all began with the discovery of Emacs. Let&amp;rsquo;s delve into how Emacs introduced me to the realm of functional programming, starting with Elisp and expanding into Common Lisp, Scheme, and my current fascination with Clojure.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-elisp---the-gateway-to-functional-programming&#34;&gt;Part 1: Elisp - The Gateway to Functional Programming&lt;/h2&gt;
+&lt;p&gt;My journey started when I stumbled upon Elisp, the Emacs Lisp. Little did I know that it would be the gateway to my exploration of functional programming. Learning Elisp felt like a playful adventure; I was discovering new concepts through practical experience. Every line of code I wrote, every macro I crafted, was a step towards understanding the beauty of functional programming.&lt;/p&gt;
+&lt;p&gt;Elisp introduced me to a whole new mindset, one that I could apply to other tools. It enabled me to create workflows tailored to my needs, from simple note-taking to writing and running code within the same environment. The flexibility and extensibility of Emacs allowed me to craft a unique coding experience that&amp;rsquo;s hard to replicate in other text editors.&lt;/p&gt;
+&lt;h3 id=&#34;code-comparison-syntax-across-languages&#34;&gt;Code Comparison: Syntax Across Languages&lt;/h3&gt;
+&lt;p&gt;What&amp;rsquo;s fascinating is that Elisp shares a striking resemblance in syntax with Common Lisp, Scheme, and Clojure. Here&amp;rsquo;s a quick comparison to give you a taste:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Elisp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun square (x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;*&lt;/span&gt; x x))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Elisp snippet for squaring a number.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Common Lisp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun square (x)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;*&lt;/span&gt; x x))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Common Lisp snippet for squaring a number.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Scheme&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;square&lt;/span&gt; x)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (* x x))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;; Returns 25&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;3. Common Lisp: Where Magic Happens:&lt;/strong&gt;
-But hold onto your code snippets, because there&amp;rsquo;s more magic to come. Say hi to Common Lisp – the powerhouse of programming languages. It&amp;rsquo;s like sculpting code with a magic wand. Functions, data manipulation, and abstractions are your tools for conjuring coding marvels.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-common-lisp&#34; data-lang=&#34;common-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Unleashing Common Lisp power&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Scheme snippet for squaring a number.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-clojure&#34; data-lang=&#34;clojure&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Clojure&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;defn &lt;/span&gt;square [x]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (* x x))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Clojure snippet for squaring a number.&lt;/p&gt;
+&lt;h2 id=&#34;part-2-common-lisp-and-scheme---expanding-horizons&#34;&gt;Part 2: Common Lisp and Scheme - Expanding Horizons&lt;/h2&gt;
+&lt;p&gt;As my journey continued, Elisp&amp;rsquo;s influence led me to explore further. I dived into Common Lisp, a powerhouse of a programming language, and Scheme, a language that embodies elegance and conciseness. Learning these languages felt like a natural progression. Common Lisp&amp;rsquo;s rich feature set allowed me to wield the magic wand of code manipulation, while Scheme&amp;rsquo;s simplicity provided an avenue for concise and expressive coding.&lt;/p&gt;
+&lt;p&gt;These languages expanded my horizons, and I found myself embracing functional programming not as a mere concept but as a way of thinking and problem-solving. I was no longer just learning; I was applying my newfound knowledge to create coding marvels.&lt;/p&gt;
+&lt;h3 id=&#34;code-comparison-syntax-across-languages-1&#34;&gt;Code Comparison: Syntax Across Languages&lt;/h3&gt;
+&lt;p&gt;The beauty of functional programming lies in the consistency of syntax across these languages. Here&amp;rsquo;s a snippet showcasing the similarity:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Common Lisp&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(defun factorial (n)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;&amp;lt;=&lt;/span&gt; n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#a6e22e&#34;&gt;*&lt;/span&gt; n (factorial (&lt;span style=&#34;color:#a6e22e&#34;&gt;-&lt;/span&gt; n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)))))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(factorial &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;; Returns 120&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;stay-tuned-for-the-next-chapter&#34;&gt;&lt;strong&gt;Stay Tuned for the Next Chapter&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;So, fellow coding pioneers, that&amp;rsquo;s my story so far – a journey that began with one text editor and unfolded into an entirely new coding realm. But guess what? The adventure doesn&amp;rsquo;t end here! Brace yourselves for our next mission: a YouTube voyage delving into the fascinating fusion of Emacs and functional programming. Until then, keep your code crisp and your curiosity unstoppable!&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Common Lisp snippet for calculating the factorial.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;;; Scheme&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;define &lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;factorial&lt;/span&gt; n)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#66d9ef&#34;&gt;if &lt;/span&gt;(&amp;lt;= n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (* n (&lt;span style=&#34;color:#a6e22e&#34;&gt;factorial&lt;/span&gt; (- n &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)))))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Scheme snippet for calculating the factorial.&lt;/p&gt;
+&lt;h2 id=&#34;part-3-the-fascination-with-clojure&#34;&gt;Part 3: The Fascination with Clojure&lt;/h2&gt;
+&lt;p&gt;And now, the journey continues with a new chapter: my growing fascination with Clojure. Emacs and the languages I&amp;rsquo;ve explored thus far have fueled my curiosity and passion for functional programming. Clojure, with its Lisp heritage and modern design, has become my new bet in the realm of programming languages.&lt;/p&gt;
+&lt;p&gt;The elegance, simplicity, and the promise of practicality in Clojure have piqued my interest. It feels like a natural evolution, a logical step forward in my quest to embrace functional programming fully. As I delve into Clojure, I&amp;rsquo;m excited to see how this language will further enhance my coding journey and open up new possibilities.&lt;/p&gt;
+&lt;p&gt;In conclusion, my adventure began with Emacs, which introduced me to functional programming through Elisp. This journey led me to explore Common Lisp, Scheme, and now, my bets are on Clojure. Learning by doing, I&amp;rsquo;ve embraced a new mindset that allows me to create unique workflows and craft coding marvels. The magic of functional programming continues to unfold, and I can&amp;rsquo;t wait to see where this path leads.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s a wrap for now! Stay tuned for more coding adventures and inspiration.&lt;/p&gt;
 </content>
     </item>
     
