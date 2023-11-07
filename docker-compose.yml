@@ -81,6 +81,7 @@ services:
       - "65000"
     volumes:
       - ./emacs:/app
+      - ./news:/home
       - ./config/emacs:/emacs
     tty: true
     stdin_open: true
