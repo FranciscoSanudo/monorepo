@@ -25,6 +25,12 @@ RUN yes y | ~/.config/emacs/bin/doom install
 # Install the required packages within the virtual environment
 #RUN pip install flask requests
 
+# Create a new user
+RUN useradd -ms /bin/bash appuser
+
+# Set the user as the default user
+USER appuser
+
 # Set up the environment
 ENV PYTHONUNBUFFERED=1
 
