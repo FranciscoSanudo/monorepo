@@ -1,4 +1,3 @@
-# Use Debian as the base image
 FROM debian:latest
 
 # Update and install necessary packages
@@ -11,28 +10,31 @@ RUN apt update && apt install -y \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
-# Add git 
-# Install doom
-RUN git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs 
-RUN yes y | ~/.config/emacs/bin/doom install
+# Create a new user
+RUN useradd -ms /bin/bash appuser
 
-# Create a virtual environment
-# RUN python3 -m venv env
-
-# Activate the virtual environment
-#RUN /bin/bash -c "source /home/env/bin/activate"
-
-# Install the required packages within the virtual environment
-#RUN pip install flask requests
+# Set the user as the default user
+USER appuser
 
 # Set up the environment
 ENV PYTHONUNBUFFERED=1
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /home/appuser
 
-RUN emacs --daemon=default
+# Create the appuser's home directory and ensure they have ownership
+RUN mkdir -p /home/appuser && chown -R appuser:appuser /home/appuser
+
+# Install 'gotty' in the user's home directory
+RUN go install github.com/sorenisanerd/gotty@latest
+
+# Install doom
+RUN mkdir -p /home/appuser/.config/emacs
+RUN git clone --depth 1 https://github.com/doomemacs/doomemacs /home/appuser/.config/emacs
+RUN yes y | /home/appuser/.config/emacs/bin/doom install
+
+# Add the user's bin directory to the PATH
+ENV PATH="/home/appuser/go/bin:${PATH}"
+
 # Start the container with the command 'emacs'
-# CMD ["emacs", "--daemon=default"]
-#CMD ["emacs"]
-#CMD ["emacs"]
+CMD ["emacs", "--daemon=default"]

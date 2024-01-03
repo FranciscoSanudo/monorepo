@@ -58,21 +58,6 @@ services:
       - nginx-proxy
       - letsencrypt
 
-  www_mrpancho:
-    image: nginx
-    restart: always
-    expose:
-      - "80"
-    volumes:
-      - ./mrpancho:/usr/share/nginx/html:ro
-    environment:
-      - VIRTUAL_HOST=mrpancho.xyz,www.mrpancho.xyz
-      - LETSENCRYPT_HOST=mrpancho.xyz,www.mrpancho.xyz
-      - LETSENCRYPT_EMAIL=francisco.sanudo.acosta@gmail.com
-    depends_on:
-      - nginx-proxy
-      - letsencrypt
-
   emacs:
     build:
       context: .
@@ -80,8 +65,8 @@ services:
     expose:
       - "65000"
     volumes:
-      - ./emacs:/app
-      - ./news:/home
+      - ./emacs:/app/emacs
+      - ./news:/app/news
       - ./config/emacs:/emacs
     tty: true
     stdin_open: true

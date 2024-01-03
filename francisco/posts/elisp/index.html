@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Emacs: Enough elisp to get you started λ :: Francisco Sanudo</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I mentioned in the previous post that I stumbled into the world of Emacs almost accidentally. At the time, I didn&amp;rsquo;t have a clear understanding of just how productive Emacs could be until I decided to dive in and give it a try. Initially, working with Emacs felt a bit awkward, and there were moments when I was tempted to give up. However, I persisted, driven by a curiosity to explore its capabilities, and I was pleasantly surprised by how quickly I adapted to this powerful text editor." />
+<meta name="keywords" content="Lisp Chemical Engineering Python" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/elisp/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/style.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="/img/theme-colors/green.png">
+  <link rel="apple-touch-icon" href="/img/theme-colors/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="Francisco Sanudo" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Emacs: Enough elisp to get you started λ">
+<meta property="og:description" content="I mentioned in the previous post that I stumbled into the world of Emacs almost accidentally. At the time, I didn&amp;rsquo;t have a clear understanding of just how productive Emacs could be until I decided to dive in and give it a try. Initially, working with Emacs felt a bit awkward, and there were moments when I was tempted to give up. However, I persisted, driven by a curiosity to explore its capabilities, and I was pleasantly surprised by how quickly I adapted to this powerful text editor." />
+<meta property="og:url" content="/posts/elisp/" />
+<meta property="og:site_name" content="Francisco Sanudo" />
+
+  
+    <meta property="og:image" content="/img/favicon/green.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-11-10 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    francisco@sanudo:~$
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/posts">[1] Posts</a></li>
+        
+      
+        
+          <li><a href="/emacs">[2] Dashboard</a></li>
+        
+      
+        
+          <li><a href="/news">[3] News App</a></li>
+        
+      
+        
+          <li><a href="/about">[4] About</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/posts">[1] Posts</a></li>
+        
+      
+        
+          <li><a href="/emacs">[2] Dashboard</a></li>
+        
+      
+        
+          <li><a href="/news">[3] News App</a></li>
+        
+      
+        
+          <li><a href="/about">[4] About</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/elisp/">Emacs: Enough elisp to get you started λ</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2023-11-10 ::
+        
+      </time>
+    
+    
+      <span class="post-author">Francisco Sanudo</span>
+    
+    
+      <span class="post-reading-time">:: 4 min read (644 words)</span>
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>I mentioned in the previous post that I stumbled into the world of Emacs almost accidentally. At the time, I didn&rsquo;t have a clear understanding of just how productive Emacs could be until I decided to dive in and give it a try. Initially, working with Emacs felt a bit awkward, and there were moments when I was tempted to give up. However, I persisted, driven by a curiosity to explore its capabilities, and I was pleasantly surprised by how quickly I adapted to this powerful text editor.</p>
+<p>As I delved deeper into Emacs, I found myself needing to customize its configuration to suit my preferences. I was familiar with Vim and its configuration file (.vimrc), so I set out to find the Emacs equivalent. To my surprise, Emacs configuration was quite different, and it introduced me to a world filled with parentheses – Lisp, specifically Elisp. This was my first taste of Lisp programming, and it happened in late 2021. To this day, I&rsquo;m still amazed by the incredible versatility of Emacs.</p>
+<p>Let&rsquo;s delve into the important aspects of working with Emacs, focusing on how to get started:</p>
+<h2 id="emacs-configuration-is-lisp-code">Emacs Configuration is Lisp Code<a href="#emacs-configuration-is-lisp-code" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Emacs configuration files are written in Emacs Lisp (Elisp). This means that your <code>.emacs</code> or <code>init.el</code> file is essentially a Lisp program. You can customize every aspect of Emacs by writing Elisp code in this file. For example, to change the font size in your configuration, you&rsquo;d use Elisp like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;default</span> <span style="color:#66d9ef">nil</span> :height <span style="color:#ae81ff">120</span>)
+</span></span></code></pre></div><h2 id="using-elisp-for-simple-scenarios">Using Elisp for Simple Scenarios<a href="#using-elisp-for-simple-scenarios" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Emacs is extremely versatile, and Elisp allows you to create custom functionality. Here are some simple scenarios to get you started:</p>
+<p><strong>Remove Menu Bar</strong>: If you want to hide the menu bar in Emacs, you can add the following line to your configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(menu-bar-mode <span style="color:#ae81ff">-1</span>)
+</span></span></code></pre></div><p><strong>Remove Scroll Bar</strong>: To get rid of the scroll bar, you can use this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(scroll-bar-mode <span style="color:#ae81ff">-1</span>)
+</span></span></code></pre></div><p><strong>Start in a Specific Buffer</strong>: If you always want to start in a particular buffer, you can set it as the default buffer in your configuration. For example, to start in the Org Agenda buffer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(setq initial-buffer-choice <span style="color:#e6db74">&#39;org-agenda</span>)
+</span></span></code></pre></div><p><strong>Manage Packages</strong>: Emacs has a package manager, and you can use Elisp to install and configure packages. For example, to install the popular use-package package, add this to your configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;package</span>)
+</span></span><span style="display:flex;"><span>(add-to-list <span style="color:#e6db74">&#39;package-archives</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;melpa&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;https://melpa.org/packages/&#34;</span>) <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>(package-initialize)
+</span></span><span style="display:flex;"><span>(unless (package-installed-p <span style="color:#e6db74">&#39;use-package</span>)
+</span></span><span style="display:flex;"><span>  (package-refresh-contents)
+</span></span><span style="display:flex;"><span>  (package-install <span style="color:#e6db74">&#39;use-package</span>))
+</span></span></code></pre></div><p><strong>Basic File Manipulation/Navigation</strong>: Emacs provides powerful keybindings for file manipulation and navigation. For instance, C-x C-f opens a file, C-x C-s saves a file, and C-x C-w saves a file with a different name. You can also use C-x C-b to list buffers and switch between them.</p>
+<p><strong>Programming</strong>: Emacs is a popular choice among programmers. You can use it for various programming languages with dedicated modes and extensions. For example, if you&rsquo;re working with Python, you can enable Python mode with M-x python-mode. You can also install language-specific packages like elpy for Python development or company-mode for autocompletion.</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In this journey of exploring Emacs and Elisp purely for the joy of learning, I can&rsquo;t help but wonder why this powerful tool isn&rsquo;t more widely recognized. As I continue this adventure, I&rsquo;m eager to experiment with Emacs in the realm of web technologies, inspired by success stories like &ldquo;Viaweb.&rdquo; A pioneering web application that continues to inspire me to this day.</p>
+<p>I&rsquo;m keen to explore how Emacs can be a valuable tool in the ever-evolving world of web technologies. My next steps will likely look to play with Emacs integrations.</p>
+<p>Furthermore, I aim to investigate the integration of web browsers into the Emacs workflow using tools like eww (the Emacs Web Wowser). In doing so, I hope to unravel the untapped potential of Emacs in the ever-evolving world of web technologies and share my discoveries with those who share a similar curiosity and enthusiasm.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/emacs_to_functional/">
+                <span class="button__text">Lisp: From emacs to functional programming, a new exciting world ☯️</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+    
+    
+    
+        <span>:: Francisco Sanudo <a href="https://franciscosanudo.com/"> 2023</a> ::</span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
